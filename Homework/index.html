@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แนะนำตัวเอง</title>
+</head>
+
+<body>
+
+    <!-- ส่วนหัวเว็บไซต์ (Semantic) -->
+    <header>
+        <h1>สวัสดีค่ะ! นี่คือเว็บไซต์แนะนำตัวของฉัน</h1>
+        <p>ยินดีที่ต้อนรับ</p>
+    </header>
+
+    <!-- เมนูนำทาง (Semantic) -->
+    <nav>
+        <h2>สารบัญ</h2>
+        <ul>
+            <li><a href="#myself" title="ไปที่แนะนำตัว">แนะนำตัว</a></li>
+            <li><a href="#interest" title="ไปที่ความสนใจ">ความสนใจของฉัน</a></li>
+            <li><a href="#form" title="ไปที่ฟอร์ม">แบบฟอร์ม</a></li>
+            <li><a href="#contact" title="ไปที่ติดต่อ">ติดต่อฉัน</a></li>
+        </ul>
+    </nav>
+
+    <!-- เนื้อหาหลัก (Semantic) -->
+    <main>
+
+        <p align="center">
+            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+                 alt="ภาพเคลื่อนไหวต้อนรับเว็บไซต์">
+        </p>
+
+        <!-- แนะนำตัว (Semantic) -->
+        <section id="myself">
+            <h2>แนะนำตัว</h2>
+            <img src="myimage.jpg" alt="รูปโปรไฟล์ของฉัน" width="300">
+            <p><strong>ชื่อ-สกุล:</strong> นภัสประภา กุลสุทธิ์เสถียร</p>
+            <p><strong>ชื่อเล่น:</strong> ไอเดีย </p>
+            <p><strong>อายุ:</strong> 18 </p>
+            <p><strong>สถาบัน/โรงเรียน:</strong> มหาวิทยาลัยเทคโนโลยีราชมงคลล้านนา</p>
+
+            <!-- คอมเมนต์ HTML จุดที่ 2 -->
+            <p><strong>เป้าหมาย:</strong> อยากพัฒนาทักษะการสร้างเว็บไซต์ และการเขียนโปรแกรมให้เก่งขึ้น</p>
+        </section>
+
+        <br>
+
+        <!-- ความสนใจ + ตาราง -->
+        <section id="interest">
+            <h2>ความสนใจของฉัน</h2>
+
+            <article>
+                <p>ฉันสนใจเรื่องเทคโนโลยี การเขียนโปรแกรม และการออกแบบเว็บไซต์</p>
+                <p>เวลาว่างชอบฝึกเขียนโค้ด ดูคอนเทนต์ความรู้ และลองทำโปรเจกต์เล็ก ๆ</p>
+            </article>
+
+            <h3>ตารางสรุปทักษะ</h3>
+            <table border="1" cellspacing="0" cellpadding="6" align="center">
+                <caption>ตารางทักษะและระดับความถนัด</caption>
+                <tr>
+                    <th rowspan="2">หัวข้อ</th>
+                    <th colspan="2">ระดับความถนัด</th>
+                </tr>
+                <tr>
+                    <th>พื้นฐาน</th>
+                    <th>ปานกลาง</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td align="center">✓</td>
+                    <td align="center"></td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td align="center">✓</td>
+                    <td align="center"></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <h3>งานอดิเรก</h3>
+            <ul>
+                <li>ตีเทนนิส</li>
+                <li>วาดรูป</li>
+                <li>อ่านหนังสือ</li>
+            </ul>
+        </section>
+
+        <br>
+
+        <!-- ฟอร์ม -->
+        <section id="form">
+            <h2>แบบฟอร์ม</h2>
+
+            <form>
+                <label>ชื่อ:</label>
+                <input type="text" name="name">
+                <br><br>
+
+                <label>อีเมล:</label>
+                <input type="email" name="email">
+                <br><br>
+
+                <label>คะแนนความพึงพอใจ:</label>
+                <select name="rate">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <br><br>
+
+                <label>ความคิดเห็น:</label>
+                <textarea name="comment"></textarea>
+                <br><br>
+
+                <button type="reset">ล้างข้อมูล</button>
+                <button type="submit">ส่ง</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ส่วนท้ายเว็บไซต์ (Semantic) -->
+    <footer id="contact">
+        <h2>ติดต่อฉัน</h2>
+        <p>© 2025 เว็บไซต์แนะนำตัวเอง</p>
+
+        <p>
+            <a href="https://www.facebook.com/napatprapa.kulsuttisatien?rdid=qPU2I7eRL1TLOyAQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CjxfZTUws%2F#" target="_blank">Facebook</a> |
+            <a href="https://github.com/napat68" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/n.xptpraxd_/?igsh=MWlpYTNqcTU1M3UwZw%3D%3D#" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
