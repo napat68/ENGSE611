@@ -180,8 +180,6 @@ footer{
     font-weight: 600;
 }
 
-/* ===== Class selectors (ตามโจทย์) ===== */
-/* ใส่ class นี้กับรูป GIF ด้านบนเพื่อให้ดูเป็นกรอบสวย */
 .hero{
     border-radius: 14px;
     border: 1px solid rgba(255,255,255,0.18);
@@ -193,7 +191,4 @@ footer{
     font-weight: 800;
 }
 
-/* ทำกล่องพิเศษให้ section (ถ้าต้องการ) */
-.card{
-    background: rgba(255,255,255,0.09);
-}
+
