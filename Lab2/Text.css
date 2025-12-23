@@ -1,0 +1,42 @@
+
+h2 {
+    text-align: center;      
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+.deco-underline {
+    text-decoration: underline;
+}
+
+.deco-through {
+    text-decoration: line-through;
+}
+
+.deco-none {
+    text-decoration: none;
+}
+
+.lh-1-5 {
+    line-height: 1.5;      
+    background-color: #f9f9f9; 
+}
+
+.lh-24px {
+    line-height: 24px;      
+    background-color: #f0f0f0;
+}

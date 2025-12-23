@@ -1,0 +1,9 @@
+.btn-red {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+.box {
+    border: 2px;
+    background: green;
+}

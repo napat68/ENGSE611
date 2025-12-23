@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestCSS</title>
+    <link rel="stylesheet" href="Try.css">
+
+    <!-- inside css -->
+    <style> 
+        /* 1.Element Selector */
+        p {
+            color: green;
+        }
+        /* 2.Class Selector */
+        .highlight {
+            background: yellow;
+            padding: 5px;
+        }
+        /* 3.ID Selector */
+        #header {
+            background: blue;
+            color: white;
+            padding: 10px;
+        }
+       
+        /* 1) Pseudo - class :hover */
+        p:hover {
+            color: red; 
+            background: #ffe5e5;
+            cursor: pointer ;
+        }
+
+        /* 2) Attribute Seletor [type="text"] */
+        input[type="text"] {
+            border: 2px solid blue; 
+            padding : 8px ;
+            border-radius: 5px;
+        }
+        input[type="text"]:focus {
+            border-color: rgb(255,0,128);
+            outline:none;
+            background-color: #fff0fa;
+        }
+        
+        body {
+            font-family: Serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>ตัวอย่าง CSS Selectors</h1>
+
+    <!-- Element Selector -->
+    <p>
+    ข้อความนี้ถูกจัดสีด้วย Element Selector (p { color: green; })
+    </p>
+
+    <!-- class Selector-->
+    <p class="highlight">
+    ข้อความนี้ถูกจัดสไตล์ด้วย Class Selector (.highlight)
+    </p>
+
+    <!-- ID Selector -->
+    <div id="header"> <!--กล่อง-->
+        นี่คือพื้นที่ Header (ID Selector)
+    </div>
+
+    <h2>Pseudo-class :hover</h2>
+    <p>นำเมาส์มาวางบนข้อความนี้เพื่อดูเอฟเฟกต์</p>
+    
+    <h2>Attribute Seletor [type="text"]</h2>
+    <input type="text" placeholder="พิมพ์ข้อความที่นี่">
+
+    <br><br><br>
+    <div class="box">
+        <button class="btn-red">DEL</button>
+        <button class="btn-red">Cancle</button>
+    </div>
+    
+</body>
+</html>
