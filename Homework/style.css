@@ -30,7 +30,7 @@ a:hover{
     text-decoration: underline;
 }
 
-/* header / nav */
+/* header/nav */
 header{
     padding: 18px 14px 10px;
     background: #071422;
@@ -61,7 +61,6 @@ main{
     padding: 18px 14px 40px;
 }
 
-/* make images responsive (including gif + profile) */
 img{
     max-width: 100%;
     height: auto;
@@ -81,7 +80,7 @@ section{
     margin: 16px 0;
 }
 
-/* table */
+/* ตาราง */
 table{
     width: 100%;
     max-width: 860px;
@@ -117,7 +116,7 @@ td{
     color: black;
 }
 
-/* form */
+/* แบบฟอร์ม */
 form{
     margin-top: 10px;
 }
@@ -167,7 +166,7 @@ footer{
     border-top: 1px solid rgba(255,255,255,0.15);
 }
 
-/* ===== ID selectors (ตามโจทย์) ===== */
+/*ID selectors*/
 #myself h2{
     text-align: center;
 }
@@ -191,4 +190,6 @@ footer{
     font-weight: 800;
 }
 
-
+.card{
+    background: rgba(255,255,255,0.09);
+}
