@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Responsive - Navy Theme</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            background-color: #0b1d33; /* พื้นหลังกรมท่า */
+            color: #ffffff;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: auto 1fr;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            grid-column: 1 / -1;
+            background-color: #102a44;
+            text-align: center;
+            padding: 15px;
+            border-bottom: 2px solid #1e4a7a;
+        }
+
+        /* Sidebar */
+        aside {
+            background-color: #163b5c;
+            padding: 20px;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside p {
+            margin: 10px 0;
+        }
+
+        /* Content */
+        article {
+            background-color: #1e3552;
+            padding: 20px;
+        }
+
+        article hr {
+            border: none;
+            border-top: 1px solid #4f6f91;
+            margin: 15px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+            }
+
+            header {
+                grid-column: 1 / -1;
+            }
+
+            aside {
+                grid-column: 1 / -1;
+            }
+
+            article {
+                grid-column: 1 / -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <header>
+            <h2>โจทย์ที่ 2: 2-Column Layout ด้วย CSS Grid</h2>
+        </header>
+
+        <aside>
+            <h3>เมนู</h3>
+            <p>About</p>
+            <p>Services</p>
+            <p>Contact</p>
+        </aside>
+
+        <article>
+            <h3>ยินดีต้อนรับ</h3>
+            <p>นี่คือเนื้อหาของเว็บไซต์ (75%)</p>
+            <p>ด้านซ้ายคือเมนู (25%)</p>
+            <hr>
+            <p><strong>ลองย่อหน้าจอให้เล็กกว่า 600px ดู</strong></p>
+            <p>Layout จะเปลี่ยนจาก “ซ้าย–ขวา” เป็น “บน–ล่าง” ทันที</p>
+        </article>
+    </div>
+
+</body>
+</html>

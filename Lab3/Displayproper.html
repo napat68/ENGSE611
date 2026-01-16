@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*block*/
+        .block-example_div {
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            background:#c8e6ff; 
+        }
+        /*inline*/
+        .inline-example_span {
+            display: inline;
+            padding: 5px;
+            background:#ffc8c8; 
+            margin-right: 5px;
+        }
+        /*inline-block*/
+        .inline-block-example_div {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            background: #d2ffd2; 
+            margin-right: 10px;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #4caf50;
+        }
+        .none {
+            display: none; /*หายไปจาก layout*/
+        }
+        .hidden {
+            visibility: hidden; /*ครอบพื้นที่*/
+        }
+    </style>
+</head>
+<body>
+    <h2>display: block;</h2>
+    <div class="block-example_div">block 1</div>
+    <div class="block-example_div">block 2</div>
+    <hr><br>
+
+    <h2>display: line;</h2>
+    <span class="inline-example_span"> Inline 1</span>
+    <span class="inline-example_span"> Inline 2 Inline 2</span>
+    <span class="inline-example_span"> Inline 3</span>
+    <hr><br>
+
+    <h2>display: Inline-block;</h2>
+    <span class="inline-block-example_div">BOX A</span> 
+    <span class="inline-block-example_div">BOX B BOX B BOX B</span>
+    <span class="inline-block-example_div">BOX C</span>
+</body>
+</html>

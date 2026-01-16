@@ -30,7 +30,7 @@ a:hover{
     text-decoration: underline;
 }
 
-/* header/nav */
+/*header/nav*/
 header{
     padding: 18px 14px 10px;
     background: #071422;
@@ -54,7 +54,7 @@ nav li{
     margin: 6px 10px;
 }
 
-/* main layout */
+/*main layout*/
 main{
     max-width: 920px;
     margin: 0 auto;
@@ -71,7 +71,7 @@ img{
     margin: 0 auto;
 }
 
-/* sections (Element selector on section) */
+/*sections (Element selector on section)*/
 section{
     background: rgba(255,255,255,0.06);
     border: 1px solid rgba(255,255,255,0.14);
@@ -80,7 +80,7 @@ section{
     margin: 16px 0;
 }
 
-/* ตาราง */
+/*ตาราง*/
 table{
     width: 100%;
     max-width: 860px;
@@ -116,7 +116,7 @@ td{
     color: black;
 }
 
-/* แบบฟอร์ม */
+/*แบบฟอร์ม*/
 form{
     margin-top: 10px;
 }
@@ -184,7 +184,7 @@ footer{
     border: 1px solid rgba(255,255,255,0.18);
 }
 
-/* เน้นข้อความบางส่วน */
+/*เน้นข้อความบางส่วน*/
 .highlight{
     color: #ffd27a;
     font-weight: 800;

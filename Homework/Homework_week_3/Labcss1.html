@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Cards with Flexbox</title>
+
+    <style>
+        * { box-sizing: border-box; }
+
+        .flex-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 30px;
+            background-color: #cfeee0; /* เขียวอ่อน */
+            box-shadow: inset 0 10px 20px rgba(0,0,0,0.2);
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background: linear-gradient(135deg, #ffffff, #dff5ea, #a8e0c8); /* การ์ดเขียวอ่อน */
+            color: #355f4b;
+            width: 220px;
+            padding: 20px;
+            border-radius: 15px;
+
+            border: 2px solid transparent;
+            cursor: pointer;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+        }
+
+        .item:hover {
+            transform: scale(1.15);
+            border-color: #7fc8a9;
+            box-shadow: 0 0 35px #7fc8a9;
+            z-index: 10;
+        }
+
+        .item p:first-child {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            color: #2f6b4f;
+        }
+
+        .item img {
+            width: 90px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #eefaf4;">
+    <h3 style="font-family: Arial, sans-serif;">
+        โจทย์ที่ 1: Card Layout ด้วย Flexbox
+    </h3>
+
+    <div class="flex-box">
+
+        <div class="item"> 
+            <p>READING</p> 
+            <img src="https://cdn-icons-png.flaticon.com/512/2436/2436636.png" alt="Reading">
+            <p>อ่านนิยายเพื่อผ่อนคลาย เพิ่มสมาธิ และเปิดจินตนาการ</p>
+        </div>
+
+        <div class="item"> 
+            <p>TENNIS</p> 
+            <img src="https://www.freeiconspng.com/uploads/sport-activities-tennis-icon-14.png" alt="Tennis">
+            <p>การตีเทนนิสช่วยเสริมความแข็งแรงและความคล่องตัวของร่างกาย</p>
+        </div>
+
+        <div class="item"> 
+            <p>DRAWING</p> 
+            <img src="https://cdn-icons-png.flaticon.com/512/2970/2970785.png" alt="Drawing">
+            <p>วาดรูปเพื่อฝึกความคิดสร้างสรรค์และถ่ายทอดอารมณ์ผ่านงานศิลปะ</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 5px solid #0077ff;
+      margin: 20px;
+      background-color: #cce5ff;
+    }
+
+    /* ตัวอย่างแบบปกติ (content-box) */
+    .content-box {
+      box-sizing: content-box;
+    }
+
+    /* ตัวอย่างแบบ border-box */
+    .border-box {
+      box-sizing: border-box;
+      background-color: #ffd8cc;
+    }
+    .shadow1 {
+      box-shadow: 10px 10px 5px #3b3b3b;
+    }
+    .shadow2 {
+      box-shadow: inset 10px 10px 5px #3b3b3b;
+    }
+    /*-----------------------------*/
+    .radius{
+      border-radius: 20px;
+    }
+    /*<!--Border-style-->*/
+    .dashed {
+      border-style: dashed;
+    }
+    .groove {
+      border-style: groove;
+    }
+
+    </style>
+</head>
+
+<body>
+
+  <h2>CSS Box Model</h2>
+
+  <h3>1) box-sizing: content-box (ค่าปกติ)</h3>
+  <div class="box content-box">
+    ความกว้างที่กำหนด = 200px  
+    (ไม่รวม padding + border)
+  </div>
+
+  <h3>2) box-sizing: border-box</h3>
+  <div class="box border-box">
+    ความกว้างที่กำหนด = 200px  
+    (รวม padding + border อยู่ใน 200px)
+  </div>
+
+  <h3>3)</h3>
+  <div class="box shadow1"> sda dsad </div>
+  <h3>4)</h3>
+  <div class="box shadow2 radius"> sda dsad </div>
+  <!--Border-style-->
+  <h3>Border-style</h3>
+  <div class="box dashed">dsaddgrrr</div>
+  <div class="box groove">dsaddgrrr</div>
+</body>
+</html>
