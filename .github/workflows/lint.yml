@@ -19,5 +19,6 @@ jobs:
           VALIDATE_CSS: true
           VALIDATE_ALL_CODEBASE: false
 
-          FILTER_REGEX_INCLUDE: (Homework/Homework_week_3/.*)
+          FILTER_REGEX_INCLUDE: (Homework/Homework_week_3/.*|Homework/Homework_week_4/.*)
+
 
