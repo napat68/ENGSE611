@@ -1,0 +1,55 @@
+/* =========================================
+   Grid Container (มือถือเป็นหลัก)
+   ========================================= */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* มือถือ: 1 คอลัมน์ */
+    gap: 15px;
+    background: #e9edf2;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* กล่องเนื้อหา */
+.item {
+    background: #0f2557;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;      /* จัดข้อความกลางแนวตั้ง */
+    justify-content: center;  /* จัดข้อความกลางแนวนอน */
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 14px ;
+    line-height: 1.6;
+    text-align: center; 
+}
+/* =========================================
+   แท็บเล็ตขึ้นไป (Tablet)
+   ========================================= */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
+    }
+    p {
+        font-size: 16px ;
+    }
+}
+
+/* =========================================
+   คอมพิวเตอร์ขึ้นไป (Desktop)
+   ========================================= */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 คอลัมน์ */
+        max-width: 1200px;
+        margin: 0 auto; /* จัดกลางหน้าจอ */
+    }
+    p {
+        font-size: 18px ;
+    }
+}

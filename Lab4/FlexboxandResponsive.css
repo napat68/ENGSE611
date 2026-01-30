@@ -1,0 +1,47 @@
+/* =========================================
+   Flex container ()mother box
+   ========================================= */
+.flex-container {
+    display: flex;
+    flex-direction: column; /*mobile  แนวตั้ง*/
+    gap:15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/*item*/
+.item {
+    background: #0f2557;
+    color: #ffffff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 8px;
+}
+/* =========================================
+   2) แท็บแล็ตขึ้นไป
+   ========================================= */
+@media (min-width: 768px) {
+    .flex-container {
+        flex-direction: row; /*เรียงแนวนอน*/
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex: 1 1 45%; /*2 box ต่อแถว*/
+    }
+}
+   /* =========================================
+   3) computer
+   ========================================= */
+@media (min-width: 1024px) {
+    .flex-container {
+        flex-wrap: nowrap;
+    }
+
+    .item {
+        flex: 1 ; /*ทุก box  กว้างเท่ากัน*/
+    }
+}

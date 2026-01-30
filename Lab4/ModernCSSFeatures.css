@@ -1,0 +1,54 @@
+/* =========================================
+   CSS Variables (Mobile First)
+   ========================================= */
+:root {
+    /* กำหนดตัวแปรค่าเริ่มต้น (มือถือ) */
+    --padding: 16px;
+    --bg-color: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-color: #1f2933;
+}
+
+/* ปรับค่าตัวแปรเมื่อจอใหญ่ขึ้น (แท็บเล็ตขึ้นไป) */
+@media (min-width: 768px) {
+    :root {
+        --padding: 32px; /* เพิ่มระยะห่างอัตโนมัติ */
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background: var(--bg-color);   /* เรียกใช้ตัวแปร */
+    color: var(--text-color);
+}
+
+/* =========================================
+   Container ใช้ CSS Variable
+   ========================================= */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--padding); /* ค่าจะเปลี่ยนเองตาม Media Query ด้านบน */
+}
+
+.card {
+    background: var(--card-bg);
+    padding: var(--padding);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   Clamp สำหรับ Typography (ไม่ต้องใช้ Media Query)
+   ========================================= */
+h1 {
+    /* clamp(ค่าต่ำสุด, ค่าที่ปรับตามหน้าจอ, ค่าสูงสุด) */
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    margin-top: 0;
+}
+
+p {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    line-height: 1.6;
+}
