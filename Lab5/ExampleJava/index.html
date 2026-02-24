@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ทดสอบ JavaScript</title>
+</head>
+<body>
+
+    <h1>ระบบทดสอบตัวแปร</h1>
+    
+    <button onclick="runDemo()">Run Code</button>
+
+    <pre id="outputBox" style="background: #f4f4f4; padding: 10px; margin-top: 10px;"></pre>
+
+    <script>
+        function runDemo() {
+            // ล้าง Console ทุกครั้งที่รัน เพื่อไม่ให้สับสนกับผลเก่า
+            console.clear();
+            const output = [];
+
+            // ตัวอย่างตัวแปร
+            let studentName = 'สมชาย';
+            let age = 20;
+            let isStudent = true;
+            const universityName = 'มหาวิทยาลัยเทคโนโลยี';
+
+            // แสดงค่าตัวแปรเริ่มต้น
+            output.push("ชื่อ: " + studentName);
+            console.log("ชื่อ:", studentName);
+            output.push("อายุ: " + age);
+            console.log("อายุ:", age);
+
+            // เปลี่ยนค่า let
+            age = 21;
+            output.push("อายุใหม่: " + age);
+            console.log("อายุใหม่:", age);
+
+            output.push("arr : " + output);
+            console.log(output); ///ลองดู arr 
+
+            // เปลี่ยนค่า const (จะ error แต่ถูกจับใน catch)
+            try {
+                universityName = 'มหาวิทยาลัยใหม่'; // ทำให้เกิด TypeError
+            } catch (e) {
+                output.push("Error: " + e.message);
+                console.error(e.message); // แสดงใน Console เป็นสีแดง
+            }
+
+            let String = 'hello' ; 
+            console.log('Type of String : ' , typeof String);
+            let num = 65.5 ; 
+            console.log('Type of num : ' , typeof num);
+            let bool = true ; 
+            console.log('Type of bool : ' , typeof bool);
+            let undefined ; 
+            console.log('Type of undefined : ' , typeof undefined);
+            let Null = null ; 
+            console.log('Type of Null : ' , typeof Null);
+        
+
+             // แสดงผลบนหน้าเว็บ
+            document.getElementById("outputBox").textContent = output.join("\n");
+        }
+    </script>
+
+</body>
+</html>

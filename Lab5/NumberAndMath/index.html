@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="runDemo()">Run Code</button>
+
+<script>
+function runDemo() {
+    console.clear();
+    const output = [];
+
+    let a = 10; let b = 3;
+
+    // การคำนวณพื้นฐานและขั้นสูง
+    output.push("a + b = " + (a + b));
+    console.log("a + b =", a + b);
+
+    output.push("a % b = " + (a % b)); // Modulo (หาเศษจากการหาร)
+    console.log("a % b =", a % b);
+
+    output.push("a ** b = " + (a ** b)); // Exponentiation (เลขยกกำลัง 10 ยกกำลัง 3)
+    console.log("a ** b =", a ** b);
+
+    // การใช้ Math object เพื่อจัดการตัวเลข
+    output.push("// Math object");
+    
+    // Math.round: ปัดเศษตามหลักคณิตศาสตร์ (.5 ขึ้นไปปัดขึ้น)
+    output.push("ปัดเศษ 3.7: " + Math.round(3.7));
+    console.log("ปัดเศษ 3.7:", Math.round(3.7));
+
+    // Math.floor: ปัดเศษทิ้ง (ปัดลงเสมอ)
+    output.push("ปัดลง 3.7: " + Math.floor(3.7));
+    console.log("ปัดลง 3.7:", Math.floor(3.7));
+
+    // Math.ceil: ปัดขึ้นเสมอ
+    output.push("ปัดขึ้น 3.2: " + Math.ceil(3.2));
+    console.log("ปัดขึ้น 3.2:", Math.ceil(3.2));
+
+    // Math.random: สุ่มตัวเลขระหว่าง 0 แต่ไม่ถึง 1
+    let rand = Math.random();
+    output.push("สุ่ม 0-1: " + rand);
+    console.log("สุ่ม 0-1:", rand);
+
+    // ตัวอย่าง: การทำลูกเต๋า (สุ่มเลข 1 - 6)
+    output.push("// ลูกเต๋า");
+    let dice = Math.floor(Math.random() * 6) + 1;
+    output.push("ทอยลูกเต๋าได้: " + dice);
+    console.log("ทอยลูกเต๋าได้:", dice);
+
+    // แสดงผลบนหน้าเว็บ (ต้องมี <pre id="outputBox"></pre> ใน HTML)
+    document.getElementById("outputBox").textContent = output.join("\n");
+}
+</script>
+</body>
+</html>
